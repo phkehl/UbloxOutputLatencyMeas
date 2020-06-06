@@ -1,0 +1,33 @@
+{
+    //"C_Cpp.intelliSenseEngine": "Tag Parser",
+    "C_Cpp.intelliSenseEngineFallback": "Enabled",
+    // Exclude files and folders from explorer and IntelliSense (it automatically excludes .git)
+    "files.exclude": {
+        //"build": true,
+        "**/*~": true,
+        "build/**": true,
+        "build-*/**": true,
+        ".vstags": true,
+        "old/**": true,
+        ".history/**": true
+    },
+    // Exclude things from search (this automatically uses files.exclude + what you add here)
+    "search.exclude": {
+    },
+    // Exclude some things from the files watcher
+    "files.watcherExclude": {
+        "**/build/**": true
+    },
+    "files.associations": {
+    },
+    
+    // for your user settings.json
+    //"arduino.additionalUrls": [
+    //    "https://dl.espressif.com/dl/package_esp32_index.json",
+    //    "https://arduino.esp8266.com/stable/package_esp8266com_index.json"
+    //],
+    //"arduino.path": "C:\\flip\\arduino-1.18.11",
+    //"arduino.logLevel": "verbose", // verbose, info
+    //"arduino.enableUSBDetection": true,
+
+}

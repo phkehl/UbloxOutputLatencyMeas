@@ -1,0 +1,42 @@
+{
+    "version": "2.0.0",
+
+    // defaults for all tasks
+    "options": {
+        "cwd": "${workspaceFolder}",
+        "shell": { "executable": "/bin/bash", "args": [ "-c" ] },
+        "env": { "PATH": "/home/flip/sandbox/arduino:${env:PATH}" },
+    },
+    "problemMatcher": "$gcc",
+    "type": "shell",
+    "presentation": { "clear": true },
+    // the tasks
+    // https://code.visualstudio.com/docs/editor/tasks
+    // https://github.com/arduino/Arduino/blob/master/build/shared/manpage.adoc
+    "tasks": [
+        {
+            "label": "all-verify", "group": "build", "command": "make", "args": [ "all-verify" ]
+        },
+        {
+            "label": "esp32-gitta-verify", "group": "build", "command": "make", "args": [ "esp32-gitta-verify" ]
+        },
+        {
+            "label": "esp32-gitta-upload", "group": "build", "command": "make", "args": [ "esp32-gitta-upload" ]
+        },
+        {
+            "label": "esp32-gitta-trace", "group": "build", "command": "make", "args": [ "esp32-gitta-trace" ]
+        },
+        {
+            "label": "clean", "group": "build", "command": "make", "args": [ "clean" ]
+        },
+
+        {
+            "label": "debug workspaceFolder path",
+            "group": "build",
+            "command": "echo ${workspaceFolder} && readlink -f ${workspaceFolder}"
+        }
+
+    ],
+    "inputs": [
+      ]
+}

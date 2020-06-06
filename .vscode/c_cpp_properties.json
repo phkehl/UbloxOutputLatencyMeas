@@ -1,0 +1,21 @@
+{
+    "configurations": [
+        {
+            "name": "ESP32-Linux",
+            "includePath": [
+                "${env:HOME}/.arduino15/packages/esp32/tools/**",
+                "${env:HOME}/.arduino15/packages/esp32/hardware/esp32/1.0.4/**",
+                "${env:HOME}/arduino/libraries/**"
+            ],
+            "forcedInclude": [],
+            "intelliSenseMode": "gcc-x64",
+            "compilerPath": "/usr/bin/gcc",
+            "cStandard": "c11",
+            "cppStandard": "c++17",
+            "defines": [
+                "ESP32"
+            ]
+        }
+    ],
+    "version": 4
+}
